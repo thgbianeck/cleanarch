@@ -1,2 +1,4 @@
-package com.bieniek.cleanarch.dataprovider;public class client {
+package com.bieniek.cleanarch.dataprovider;
+
+public class client {
 }
