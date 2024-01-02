@@ -3,6 +3,7 @@ package com.bieniek.cleanarch.entrypoint.controller.mapper;
 import com.bieniek.cleanarch.core.domain.Customer;
 import com.bieniek.cleanarch.dataprovider.repository.entity.CustomerEntity;
 import com.bieniek.cleanarch.entrypoint.controller.request.CustomerRequest;
+import com.bieniek.cleanarch.entrypoint.controller.response.CustomerResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
@@ -15,4 +16,8 @@ public interface CustomerMapper {
     Customer toCustomer(CustomerRequest customerRequest);
 
     CustomerRequest toCustomerRequest(Customer customer);
+
+    CustomerResponse toCustomerResponse(Customer customer);
+
+    Customer toCustomer(CustomerResponse customerResponse);
 }
